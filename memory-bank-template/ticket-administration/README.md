@@ -99,7 +99,7 @@ This ticket administration system integrates with the broader memory bank strate
 2. **Use** [ticket-templates.md](02-ticket-templates.md) for consistent formatting
 3. **Follow** [workflows.md](04-workflows.md) for process compliance
 4. **Reference** [roles-and-permissions.md](03-roles-and-permissions.md) for responsibilities
-
+5. **Apply** [folder-structure.md](05-folder-structure.md) for ticket folder creation and organization guidelines
 ---
 
 _Last updated: [YYYY-MM-DD]_
