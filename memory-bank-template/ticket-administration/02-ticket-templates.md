@@ -175,6 +175,47 @@ I'll know this is done when…..
 - Track actual vs. estimated for continuous improvement
 - Break down stories larger than 8 points
 
+## Ticket Comment Guidelines
+
+When providing updates or summaries for tickets, follow these guidelines unless explicitly requested otherwise:
+
+### Executive Summary Focus
+- **Write for decision-makers**: Focus on business impact and outcomes, not technical implementation details
+- **High-level language**: Use business-friendly terminology that non-technical stakeholders can understand
+- **Key results first**: Lead with what was achieved, not how it was achieved
+- **Avoid technical jargon**: Save detailed technical explanations for technical documentation or when specifically requested
+
+### Complexity Metrics Over Time Estimates
+- **Use complexity indicators**: Report using complexity metrics (Low/Medium/High or story points)
+- **Never include time estimates**: Do not mention hours, days, or weeks in summary comments
+- **Focus on scope**: Describe the scope of work completed in terms of business value
+- **Reference story points**: Use the ticket's assigned story points as the complexity reference
+
+### No Internal Documentation References
+- **Avoid memory bank references**: Never mention memory bank, internal documentation, or AI assistant context in ticket comments
+- **External-facing language**: Write as if the comment is public-facing and self-contained
+- **Focus on deliverables**: Describe what was delivered, not where information was sourced from
+- **Professional communication**: Keep comments professional and stakeholder-appropriate
+
+### Example Comment Formats
+
+**Good Executive Summary:**
+```
+Completed user authentication enhancement. System now supports multi-factor authentication, improving security posture. Complexity: Medium (5 points). All acceptance criteria met.
+```
+
+**Avoid (Too Technical):**
+```
+Implemented JWT token refresh mechanism with Redis caching layer. Modified AuthService.ts to include token rotation logic with 15-minute expiration windows. Added bcrypt password hashing with salt rounds of 10. Estimated 2 days of work completed.
+```
+
+### When to Provide Technical Details
+Only include technical implementation details when:
+- User explicitly requests detailed technical explanation
+- Creating technical documentation or handoff notes
+- Discussing technical blockers or challenges with the development team
+- Documenting architectural decisions for future reference
+
 ---
 
 _Last updated: [YYYY-MM-DD]_

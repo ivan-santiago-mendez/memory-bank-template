@@ -15,7 +15,7 @@ All development work in this project follows a ticket-driven approach with manda
 
 ## Directory Contents
 
-### [ticket-templates.md](ticket-templates.md)
+### [ticket-templates.md](02-ticket-templates.md)
 Standardized templates for different types of tickets:
 - User Stories with acceptance criteria
 - Bug Reports with reproduction steps
@@ -24,7 +24,7 @@ Standardized templates for different types of tickets:
 
 All templates include story point estimation sections and rationale.
 
-### [best-practices.md](best-practices.md)
+### [best-practices.md](01-best-practices.md)
 Comprehensive guide covering:
 - Story point estimation methodology
 - Planning Poker processes
@@ -33,14 +33,14 @@ Comprehensive guide covering:
 - Velocity tracking and planning
 - Continuous improvement practices
 
-### [workflows.md](workflows.md)
+### [workflows.md](04-workflows.md)
 Standard ticket lifecycle workflows:
 - Ticket creation and estimation process
 - Review and approval workflows
 - Development and testing phases
 - Deployment and closure procedures
 
-### [roles-and-permissions.md](roles-and-permissions.md)
+### [roles-and-permissions.md](03-roles-and-permissions.md)
 Team roles and responsibilities:
 - Product Owner: Requirements and priorities
 - Scrum Master: Process facilitation
@@ -89,16 +89,16 @@ Consider these when estimating:
 
 This ticket administration system integrates with the broader memory bank strategy:
 - All tickets reference relevant foundation documents
-- Active work is tracked in `context/activeContext.md`
-- Progress updates are maintained in `context/progress.md`
-- Architectural decisions are documented in `context/systemPatterns.md`
+- Active work is tracked in `context/01-active-context.md`
+- Progress updates are maintained in `context/02-progress.md`
+- Architectural decisions are documented in `context/03-system-patterns.md`
 
 ## Getting Started
 
-1. **Read** [best-practices.md](best-practices.md) for methodology overview
-2. **Use** [ticket-templates.md](ticket-templates.md) for consistent formatting
-3. **Follow** [workflows.md](workflows.md) for process compliance
-4. **Reference** [roles-and-permissions.md](roles-and-permissions.md) for responsibilities
+1. **Read** [best-practices.md](01-best-practices.md) for methodology overview
+2. **Use** [ticket-templates.md](02-ticket-templates.md) for consistent formatting
+3. **Follow** [workflows.md](04-workflows.md) for process compliance
+4. **Reference** [roles-and-permissions.md](03-roles-and-permissions.md) for responsibilities
 
 ---
 

@@ -115,25 +115,53 @@ CREATE DATABASE `[DATABASE_NAME]` /*!40100 DEFAULT CHARACTER SET [CHARSET] COLLA
 ### Memory Bank Structure (Core Files)
 - **README.md**: Canonical index and usage guide for the memory bank
 - **foundation/**: Project-wide documentation
-  - `projectbrief.md`: Foundation document that shapes all other files
-  - `productContext.md`: Why this project exists and user experience goals
-  - `techContext.md`: Technologies, setup, constraints, dependencies
+  - `README.md`: **START HERE** - Guide to foundation documents and how to use them
+  - `01-project-overview.md`: High-level project structure and module organization
+  - `02-technology-stack.md`: Complete technology stack with versions
+  - `03-module-architecture.md`: Detailed module architecture and dependencies
+  - `04-build-configuration.md`: Build configuration and versioning
+  - `05-product-context.md`: Why this project exists and user experience goals
+  - `06-project-brief.md`: Foundation document that shapes all other files
+  - `07-tech-context.md`: Technologies, setup, constraints, dependencies
 - **context/**: Living project context
-  - `activeContext.md`: Current work focus, recent changes, next steps
-  - `systemPatterns.md`: System architecture and design patterns
-  - `progress.md`: What works, what's left to build, current status
+  - `README.md`: **READ AFTER FOUNDATION** - Guide to context documents and update practices
+  - `01-active-context.md`: Current work focus, recent changes, next steps (update daily)
+  - `02-progress.md`: What works, what's left to build, current status (update weekly)
+  - `03-system-patterns.md`: System architecture and design patterns (update as needed)
 - **ticket-administration/**: All ticket workflows, templates, and best practices
+  - `01-best-practices.md`: Story point estimation, Planning Poker, velocity tracking
+  - `02-ticket-templates.md`: Standardized templates for user stories, bugs, and tasks
+  - `03-roles-and-permissions.md`: Team roles and permissions in ticket management
+  - `04-workflows.md`: Complete ticket lifecycle from backlog to completion
+- **agents/**: Team role definitions and responsibilities
+  - `01-developer-agent.md`: Developer role, coding practices, testing patterns
+  - `02-reviewer-agent.md`: Code review guidelines and quality checks
+  - `03-qa-agent.md`: QA and testing responsibilities
+  - `04-ai-assistant-agent.md`: Guidelines for AI tools working with the codebase
+  - `05-documentation-agent.md`: Documentation maintenance responsibilities
+  - `06-automation-agent.md`: CI/CD, automation tooling, and infrastructure
+  - `07-claude-code-agents.md`: Integration with Claude Code Task tool and custom agents
+- **workflows/**: Development process workflows
+  - `01-development-workflow.md`: Daily coding practices and local development setup
+  - `02-code-review-workflow.md`: PR creation, review standards, and approval
+  - `03-testing-workflow.md`: Test strategies, execution, and quality gates
+  - `04-deployment-workflow.md`: Build, release, and deployment procedures
+  - `05-documentation-workflow.md`: How to maintain the memory bank
+  - `06-collaboration-workflow.md`: Team communication patterns and decision-making
 - **prompts/**: [DOMAIN_SPECIFIC] prompts, glossaries, and [TICKET_SYSTEM] ticket definitions
 
 ### Essential Memory Bank Files
 - `memory-bank/README.md` - **ALWAYS READ FIRST** - Index and usage guide
-- `foundation/projectbrief.md` - Foundation document and project scope
-- `foundation/productContext.md` - Project purpose and user experience
-- `foundation/techContext.md` - Technologies and development setup
-- `context/activeContext.md` - Current work focus and decisions
-- `context/systemPatterns.md` - Architecture and design patterns
-- `context/progress.md` - Current status and evolution
+- `foundation/README.md` - **READ SECOND** - Foundation guide and document order
+- `foundation/06-project-brief.md` - Foundation document and project scope
+- `foundation/05-product-context.md` - Project purpose and user experience
+- `foundation/07-tech-context.md` - Technologies and development setup
+- `context/01-active-context.md` - Current work focus and decisions
+- `context/03-system-patterns.md` - Architecture and design patterns
+- `context/02-progress.md` - Current status and evolution
 - `ticket-administration/README.md` - Ticket administration strategy
+- `agents/README.md` - Team role definitions and agent system overview
+- `workflows/README.md` - Development workflows and process principles
 
 ## Development Guidelines
 
@@ -141,15 +169,21 @@ CREATE DATABASE `[DATABASE_NAME]` /*!40100 DEFAULT CHARACTER SET [CHARSET] COLLA
 
 #### Planning Mode
 1. Read Memory Bank index (`memory-bank/README.md`)
-2. Check if required files are complete
-3. For ticket-driven work, reference relevant documentation in `memory-bank/ticket-administration/`
-4. Develop strategy and present approach
+2. Read Foundation guide (`memory-bank/foundation/README.md`)
+3. Load foundation documents in recommended order
+4. Check if required files are complete
+5. For ticket-driven work, reference relevant documentation in `memory-bank/ticket-administration/`
+6. Review appropriate agent guidelines from `memory-bank/agents/`
+7. Review appropriate workflow from `memory-bank/workflows/`
+8. Develop strategy and present approach
 
 #### Acting Mode
 1. Check Memory Bank for current context
-2. Update documentation as needed
-3. Execute task
-4. Document changes and patterns discovered
+2. Follow agent guidelines for the role (developer, reviewer, QA, etc.)
+3. Follow workflow procedures for the task at hand
+4. Update documentation as needed
+5. Execute task
+6. Document changes and patterns discovered
 
 ### Development Rules
 - **All work must be associated with a valid [TICKET_SYSTEM] ticket** - document in `memory-bank/ticket-administration/`
