@@ -1,0 +1,19 @@
+# Memory Bank Gitignore Template
+# Copy this to your project's .gitignore and customize as needed
+
+# Cache folder - all cache files are regenerated
+memory-bank/05-cache/**
+!memory-bank/05-cache/README.md
+
+# Context folder - working directories only (keep documentation)
+memory-bank/06-context/LOCAL/
+memory-bank/06-context/JIRA/
+# If using different ticket system, replace JIRA with your system name
+# memory-bank/06-context/Linear/
+# memory-bank/06-context/GitHub/
+
+# Keep context documentation files
+!memory-bank/06-context/*.md
+
+# Note: ticket-administration/ should NOT be gitignored
+# It contains permanent archived work that should be committed
